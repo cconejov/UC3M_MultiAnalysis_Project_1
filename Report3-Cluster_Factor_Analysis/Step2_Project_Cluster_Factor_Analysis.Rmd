@@ -1,0 +1,40 @@
+---
+title: "Cluster Analysis"
+author: "Cesar Conejo Villalobos"
+date: "1/29/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#knitr::opts_knit$set(root.dir = 'C:/Users/CCONE/Documents/Cesar/Projects/RControlVersion/UC3M/MultiAnalysis')
+#setwd("./MultiAnalysis")
+```
+
+## R Markdown
+
+
+
+```{r}
+
+getwd()
+```
+
+
+```{r}
+#load('rda/clinical_trial_complete.rda')
+#summary(clinical_trial_complete)
+```
+
+we back one
+
+```{r}
+#dir.create(path = '../Report3-Cluster_Factor_Analysis')
+
+```
+
+![PCP plot of all quantitiative variables](../figure_output/pcp_death.png)
+
+```{r}
+dir()
+```

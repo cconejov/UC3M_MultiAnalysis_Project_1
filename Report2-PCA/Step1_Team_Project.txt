@@ -1,0 +1,15 @@
+Dear students,
+
+Now, you are ready to start working with your data set. The steps you must take into account to carry out the first step of the project are the following:
+
+1. Perform a visual analysis of the pre-processed data set and obtain interesting conclusions from the analysis. Some of you have already done something similar in the preliminary step, so that this can be included in this step too.
+
+2. Estimate the mean vector, covariance matrix and correlation matrix of the quantitative variables of your data set using the appropriate techniques (sample, shrinkage, outliers,...). If there are clearly defined different populations (for example, a categorical variable of interest that distinguishes several groups of observations with different characteristics), perform the analysis for each of the populations and compare the estimates with all the observations. Obtain conclusions from the analysis.
+
+3. Use principal components on the data set and obtain interesting conclusions from the analysis.
+
+The deadline to submit this step through Aula Global is December 15th, at 10:45.
+
+Best regards,
+
+Pedro Galeano.
