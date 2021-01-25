@@ -1,33 +1,74 @@
-# UC3M_MultiAnalysis_Project_1
-Project 1 Course Multivariate Analysis
+# UC3M Multivariate Analysis Projects
 
-1) If you want to see the data use in the work: "rda/clinical_trial_complete.rda"
+Repository with all the `R` Code of the project of Multivariate Analysis
 
-2) If you want to review the R scripts, you can check in scripts:
+# Details of folders:
 
-  2.1) 1-data-wrangling.R: Wrangling of raw data set (raw data is in file "data")
+--------
+## data
+--------
 
-  2.2) 2-visual_Analysis: file with the exploration of the data set
+* Raw data with information of clinical trials.
+
+--------
+## rda
+--------
+
+* After wranglinf, this is the oficial dataset used in the project `rda/clinical_trial_complete.rda`
+
+--------
+## figure_output
+--------
+
+`.png` with some plot results. Avoid big size plot taking a print-screen of the graph and using as image.
+
+--------
+## Scripts
+--------
+* 1-data-wrangling.R: Wrangling of raw data set (raw data is in file "data")
+
+* 2-visual_Analysis: file with the exploration of the data set
   
-  2.3) 3-Sample_Mean_Analysis: file with the sample estimator and outliers study
+* 3-Sample_Mean_Analysis: file with the sample estimator and outliers study
   
-  2.4) 4-PCA: file with the PCA study by the three categories: Sex, Pain and death
+* 4-PCA: file with the PCA study by the three categories: Sex, Pain and death
 
-3) For checking the Rmarkdown report, 
+--------
+## Report
+--------
 
-  3.1) File "Project_Report.Rmd" is the first exploration of the data set
+Details of the different reports for this projects. All folders contains the `.rmd` and `.pdf` format
 
-  **3.2) File "Step1_Project.Rmd" is the first study of the data set:**
+
+1. **Report1-Data_Presentation**
+
+First exploratory analysis of the data set.
+
+2. **Report2-PCA**
+
+3.1) File "Project_Report.Rmd" is the first exploration of the data set
+
+3.2) File "Step1_Project.Rmd" is the first study of the data set:
   
-  a) Visual Analysis
+a) Visual Analysis
   
-  b) Sample Estimators
+b) Sample Estimators
   
-  c) PCA
+c) PCA
     
-**4) Final version of the document is:**
 
- 4.1) Project_Report.pdf
+3. **Report3-Cluster_Factor_Analysis**
+
+Step 2 of the proyect!!
  
- **4.2) Step1_Project.pdf ### IN CONSTRUCTION!**
+------------ 
+# Life Lesson:
+------------
+
+First time I don't use the root directory of the project in Markdown. Consider two aspects:
+
+* Change th e configuration of the root chunk in the section of global option of Markdown. Reference: [rmardown-cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html)
+
+* For the images, moves ones directory back. Reference: [stackoverflow](https://stackoverflow.com/questions/48813596/moving-one-directory-backward-in-r-path)
+ 
  
