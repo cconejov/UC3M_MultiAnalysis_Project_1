@@ -5,6 +5,31 @@ Repository with all the `R` Code of the project of Multivariate Analysis
 # Details of folders:
 
 --------
+## Report
+--------
+
+Details of the different reports for this projects. All folders contains the `.rmd` and `.pdf` format
+
+
+1. **Report1-Data_Presentation**
+
+File "Project_Report.Rmd" is the first exploration of the data set
+
+2. **Report2-PCA**
+
+File "Step1_Project.Rmd" is the first study of the data set with the following parts:
+  
+a) Visual Analysis
+  
+b) Sample Estimators
+  
+c) PCA
+
+3. **Report3-Cluster_Factor_Analysis**
+
+Step 2 of the project!!
+
+--------
 ## data
 --------
 
@@ -14,7 +39,7 @@ Repository with all the `R` Code of the project of Multivariate Analysis
 ## rda
 --------
 
-* After wranglinf, this is the oficial dataset used in the project `rda/clinical_trial_complete.rda`
+* After wrangling, this is the oficial dataset used in the project `rda/clinical_trial_complete.rda`
 
 --------
 ## figure_output
@@ -25,6 +50,7 @@ Repository with all the `R` Code of the project of Multivariate Analysis
 --------
 ## Scripts
 --------
+
 * 1-data-wrangling.R: Wrangling of raw data set (raw data is in file "data")
 
 * 2-visual_Analysis: file with the exploration of the data set
@@ -33,34 +59,6 @@ Repository with all the `R` Code of the project of Multivariate Analysis
   
 * 4-PCA: file with the PCA study by the three categories: Sex, Pain and death
 
---------
-## Report
---------
-
-Details of the different reports for this projects. All folders contains the `.rmd` and `.pdf` format
-
-
-1. **Report1-Data_Presentation**
-
-First exploratory analysis of the data set.
-
-2. **Report2-PCA**
-
-3.1) File "Project_Report.Rmd" is the first exploration of the data set
-
-3.2) File "Step1_Project.Rmd" is the first study of the data set:
-  
-a) Visual Analysis
-  
-b) Sample Estimators
-  
-c) PCA
-    
-
-3. **Report3-Cluster_Factor_Analysis**
-
-Step 2 of the proyect!!
- 
 ------------ 
 # Life Lesson:
 ------------
