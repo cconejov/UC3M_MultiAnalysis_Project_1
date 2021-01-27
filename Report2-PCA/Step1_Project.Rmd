@@ -253,17 +253,17 @@ Furthermore, the PCP plot in Figure 19, generally matches with our observations 
 
 \newpage
 
-![Scatter plot of all quantitiative variables](../figure_output/pairs_death.png)
+![Scatter plot of all quantitiative variables](../figure_output/Report1/pairs_death.png)
 
 \newpage
 
-![PCP plot of all quantitiative variables](../figure_output/pcp_death.png)
+![PCP plot of all quantitiative variables](../figure_output/Report1/pcp_death.png)
 
 \newpage
 
 The Andrews' plot in Figure 20, matches our previous analysis in Figure 18 and 19, that variables share similar distributions and relationships when accounting for *death*, as the Andrew Plot does not show any dramatic differences between the two groups.
 
-![Andrews' plot of all quantitiative variables](../figure_output/andrew_death.png)
+![Andrews' plot of all quantitiative variables](../figure_output/Report1/andrew_death.png)
 
 In conclusion, we see that when accounting for different categorical variables and *death*, the relationships between our quantitative variables do not change significantly overall, looking at the scatter plots and other visuals. There doesn't appear to be any collinearity, whether *death* is accounted for or not. We can see some minor changes in distributions and means when dividing the distribution for those who do not and do survive, however, there is nothing too drastic. The IQRs for all our variables overlap, for example. The medians are even the same for *log_ncell* and *log_ndaysicu*. The variable with the largest difference appears to be, *log_cc* where the median for those who survive is at the 25% quartile of those who do not survive. For *sbp*, the median for those who do not survive is similar to the 25% quartile of those who survive.   
 
@@ -516,7 +516,7 @@ This is a useful exercise for us to express our own understanding of the descrip
 
 ## PCA Complete dataset
 
-![First two PCs based on the sample covariance all population](../figure_output/pca_death.png)
+![First two PCs based on the sample covariance all population](../figure_output/Report1/pca_death.png)
 
 In Figure 26, we plot the first two principal components considering the entire population. Immediately, we observe that there is no clear clustering of the data within the first two principal components. We have broken out the data by survival (green) and death (orange), but we see no clear linear relationship here either. Effectively, the full data set appears uniformly distributed about the origin. We remark that the density of orange points is more pronounced on the left quadrants, implying the proportion of death outcomes is somewhat greater for negative values of the first principal component, but uniformly distributed in the second. 
 
@@ -590,7 +590,7 @@ We notice a possible negative correlation between sbp and the other biometrics l
 
 In figure 29, we see a very similar visualization as in Figure \ref{fig:l3pc}, but with the observations included. Again, we notice a lack of clustering, but we have an understanding of the relationships of our characteristics. 
 
-![PC Scores and PC loading all population](../figure_output/pca_biplot.png)
+![PC Scores and PC loading all population](../figure_output/Report1/pca_biplot.png)
 
 \newpage
 
@@ -605,7 +605,7 @@ fviz_eig(X_pcs,ncp=17,addlabels=T,barfill=color_1,barcolor=`color_4`)
 
 The matrix scatterplot in figure 31 reflects the relations in the first four principal components. Here too, we do not appreciate a clear distinction between the groups (death and survival). Nor do we see linear relationships between the populations or a specific group. This provides further justification for our initial decision of considering only the first two PCs, since the subsequent two provide no further insight into possible clusters.
 
-![PC Scores and PC loading all population](../figure_output/pca_4pc2.png)
+![PC Scores and PC loading all population](../figure_output/Report1/pca_4pc2.png)
 
 Finally, figure \ref{fig:corrpc} explains the correlation between the variables and the principal components. This information is very similar to what we deduced graphically from the PC loadings plots. In the case of the first principal components, in magnitude, the biometrical measures and medical attention variables are more related to this component.  In the case of the second principal component, the individual factors such as age and injury time acquire more relevance in the analysis. 
 
@@ -624,7 +624,7 @@ To further our analysis, we break out our data by survival outcome and develop t
 
 Similar to Figure 26, figure 33 shows there is no linear relation between the populations and the sex subgroups. Also, both principal components explain approximately 35% of the variance for each subgroup. This is similar to the PCA for all the population.
 
-![PC Scores and PC loading all population](../figure_output/pca_groups.png)
+![PC Scores and PC loading all population](../figure_output/Report1/pca_groups.png)
 
 In the case of the loadings for the first principal component (figure \ref{fig:l1pcgrp}) for the death population, the largest positive values are associated with *hr* and *cc*. 
 
@@ -731,7 +731,7 @@ For Survival patients, right panel of figure \ref{fig:l3pcgrp}, we notice slight
 
 A variable that we would benefit from here is a measure of the severity of the trauma, which would provide a more nuanced understanding of these relationships. It is likely that a majority of those who survive suffered less intense wounds than those who died. This would explain why duration and intensity of treatment are correlated for survival patients, since this would most likely be indicative of progressively severe wounds. Meanwhile, for patients who do not survive, duration and intensity of treatment are not correlated, which may be because these patients generally suffered the most severe wounds and had low chances of survival. Thus, the speed at which they were able to begin treatment only bought them time, regardless of the treatment. If we had more information on the type and severity of the wounds, we would be able to test this hypothesis.
 
-![PC Scores and PC loading all population for death and survival patiens](../figure_output/pca_group_biplot)
+![PC Scores and PC loading all population for death and survival patiens](../figure_output/Report1/pca_group_biplot.png)
 
 We have our PC Score plots with the observations mapped in figure 37. This is somewhat redundant and confirms our observations that there are no clear clusters and reiterates the correlations we discussed previously.
 

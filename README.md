@@ -65,7 +65,7 @@ Step 2 of the project!!
 
 First time I don't use the root directory of the project in Markdown. Consider two aspects:
 
-* Change th e configuration of the root chunk in the section of global option of Markdown. Reference: [rmardown-cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html)
+* Change the configuration of the root chunk in the section of global option of Markdown. Reference: [rmardown-cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html)
 
 * For the images, moves ones directory back. Reference: [stackoverflow](https://stackoverflow.com/questions/48813596/moving-one-directory-backward-in-r-path)
  
