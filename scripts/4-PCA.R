@@ -298,12 +298,12 @@ dev.off()
 
 par(mfrow=c(1,2))
 plot(1:p_death,X_pcs_death$rotation[,1],pch=19,col=color_1,main="Weights for the first PC death patients",
-     xlab="Variables",ylab="Score")
+     xlab="Variables",ylab="Score", ylim = c(-1,0.6), xlim = c(0,9))
 abline(h=0)
 text(1:p_death,X_pcs_death$rotation[,1],labels=colnames(X_death),pos=1,col=color_4,cex=0.75)
 
 plot(1:p_surv,X_pcs_surv$rotation[,1],pch=19,col=color_1,main="Weights for the first PC survival patients",
-     xlab="Variables",ylab="Score")
+     xlab="Variables",ylab="Score" , ylim = c(-0.6,0.7), xlim = c(0,9))
 abline(h=0)
 text(1:p_surv,X_pcs_surv$rotation[,1],labels=colnames(X_surv),pos=1,col=color_4,cex=0.75)
 par(mfrow=c(1,1))
@@ -313,12 +313,12 @@ par(mfrow=c(1,1))
 # Interpretation of the second PC: Weights for the second PC
 par(mfrow=c(1,2))
 plot(1:p_death,X_pcs_death$rotation[,2],pch=19,col=color_1,main="Weights for the second PC deaths patients",
-     xlab="Variables",ylab="Score")
+     xlab="Variables",ylab="Score", ylim = c(-0.3,0.7), xlim = c(0,9))
 abline(h=0)
 text(1:p_death,X_pcs_death$rotation[,2],labels=colnames(X_death),pos=1,col=color_4,cex=0.75)
 
 plot(1:p_surv,X_pcs_surv$rotation[,2],pch=19,col=color_1,main="Weights for the second PC deaths patients",
-     xlab="Variables",ylab="Score")
+     xlab="Variables",ylab="Score", ylim = c(-0.7,0.6), xlim = c(0,9))
 abline(h=0)
 text(1:p_surv,X_pcs_surv$rotation[,2],labels=colnames(X_surv),pos=1,col=color_4,cex=0.75)
 

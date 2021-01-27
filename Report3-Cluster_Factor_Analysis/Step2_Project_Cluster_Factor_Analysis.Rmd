@@ -7,33 +7,72 @@ output: pdf_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-#knitr::opts_knit$set(root.dir = 'C:/Users/CCONE/Documents/Cesar/Projects/RControlVersion/UC3M/MultiAnalysis')
-#setwd("./MultiAnalysis")
+knitr::opts_chunk$set(fig.width=8, fig.height=4)
+
+library(knitr)
+
 ```
 
-## R Markdown
+# 1. Introduction
 
+* Brief description of the variables
 
+* Correlation
+
+* Results from PCA
+
+![First 2 PC for crash2 Data Set](../figure_output/Report1/pca_death.png){width=50%}
+
+\newpage
+
+# 2. Cluster Analysis
 
 ```{r}
-
 getwd()
 ```
 
+```{r}
+library(png)
+img_path = 'figure_output/Report1/pca_death.png'
+img1 <- readPNG(img_path,native = TRUE, info = TRUE)
+attr(img1, "info")
+#include_graphics(img_path)
+
+```
+
+
+## 2.1. Partitional Clustering
+
+### Selecting the number of neighbors
+
+![Selecting K with WSS](../figure_output/Report2/1_k_wss_all.pdf){width=50%}
+
+![Selecting K with WSS](../figure_output/Report2/2_k_silhouette_all.pdf){width=50%}
+
+
+
+## 2.2. Hierarchical Clustering
+
+## 2.3. Model base clustering
+
+# 3. Factor Analysis
+
+
 
 ```{r}
-#load('rda/clinical_trial_complete.rda')
-#summary(clinical_trial_complete)
+
+```
+
+
+```{r}
 ```
 
 we back one
 
 ```{r}
-#dir.create(path = '../Report3-Cluster_Factor_Analysis')
 
 ```
 
-![PCP plot of all quantitiative variables](../figure_output/pcp_death.png)
 
 ```{r}
 dir()
